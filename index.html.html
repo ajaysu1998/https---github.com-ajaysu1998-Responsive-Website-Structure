@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    .row::after {
+      content: "";
+      clear: both;
+      display: table;
+    }
+
+    [class*="col-"] {
+      float: left;
+      padding: 15px;
+    }
+
+    html {
+      font-family: "Lucida Sans", sans-serif;
+    }
+
+
+    .footer {
+      text-align: center;
+      font-size: 12px;
+      padding: 15px;
+      background-color: pink;
+      color: black;
+
+    }
+
+    /* For mobile phones: */
+    [class*="col-"] {
+      width: 100%;
+    }
+
+    @media only screen and (min-width: 600px) {
+
+      /* For tablets: */
+      .col-s-1 {
+        width: 8.33%;
+      }
+
+      .col-s-2 {
+        width: 16.66%;
+      }
+
+      .col-s-3 {
+        width: 25%;
+      }
+
+      .col-s-4 {
+        width: 33.33%;
+      }
+
+      .col-s-5 {
+        width: 41.66%;
+      }
+
+      .col-s-6 {
+        width: 50%;
+      }
+
+      .col-s-7 {
+        width: 58.33%;
+      }
+
+      .col-s-8 {
+        width: 66.66%;
+      }
+
+      .col-s-9 {
+        width: 75%;
+      }
+
+      .col-s-10 {
+        width: 83.33%;
+      }
+
+      .col-s-11 {
+        width: 91.66%;
+      }
+
+      .col-s-12 {
+        width: 100%;
+      }
+    }
+
+    @media only screen and (min-width: 768px) {
+
+      /* For desktop: */
+      .col-1 {
+        width: 8.33%;
+      }
+
+      .col-2 {
+        width: 16.66%;
+      }
+
+      .col-3 {
+        width: 25%;
+      }
+
+      .col-4 {
+        width: 33.33%;
+      }
+
+      .col-5 {
+        width: 41.66%;
+      }
+
+      .col-6 {
+        width: 50%;
+      }
+
+      .col-7 {
+        width: 58.33%;
+      }
+
+      .col-8 {
+        width: 66.66%;
+      }
+
+      .col-9 {
+        width: 75%;
+      }
+
+      .col-10 {
+        width: 83.33%;
+      }
+
+      .col-11 {
+        width: 91.66%;
+      }
+
+      .col-12 {
+        width: 100%;
+      }
+    }
+
+
+
+
+    ul {
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
+      overflow: hidden;
+      background-color: pink;
+   
+    }
+
+    li {
+      float: right;
+    }
+
+    li a {
+      display: block;
+      color: black;
+      text-align: center;
+      padding: 14px 16px;
+      text-decoration: none;
+      font-size: larger;
+    }
+
+    .button {
+      background-color: yellow;
+      border: none;
+      color: black;
+      padding: 20px;
+      text-align: center;
+      text-decoration: none;
+      display: inline-block;
+      font-size: 26px;
+      margin: 4px 2px;
+      cursor: pointer;
+      border-radius: 12px;
+    }
+
+    .sty {
+      background-color: cornflowerblue;
+    }
+   
+  </style>
+</head>
+
+<body>
+
+  <div class="header col-12">
+  <nav>
+    <ul>
+      <li style="float:left"><a class="logo" href="#about">Logo</a></li>
+
+      <li><a href="#home">Home</a></li>
+      <li><a href="#news">about</a></li>
+      <li><a href="#contact">contact</a></li>
+      <li><a href="#services">services</a></li>
+
+    </ul>
+  </nav>
+  </div>
+  <div class="row">
+
+    <div class="row">
+      <span class="col-6 col-s-5 ">
+        <img src="bird.jfif" style="width:100% ">
+
+      </span>
+      <span class="col-6 col-s-5 ">
+        <img src="bird.jfif" style="width:100%">
+      </span>
+    </div>
+    <div class="row">
+      <div class="col-3 col-s-6 a ">
+        <h2>heading 1</h2>
+        <p>Machine learning (ML) is the study of computer algorithms that can improve automatically through experience
+          and
+          by the use of data. ... Machine learning algorithms build a model based on sample data, known as training
+          data,
+          in order to
+          make predictions or decisions without being explicitly programmed to do so.</p>
+
+      </div>
+
+      <div class="col-6 col-s-6 a">
+        <h2>heading 2</h2>
+        <p>Machine learning (ML) is the study of computer algorithms that can improve automatically through experience
+          and
+          by the use of data. ... Machine learning algorithms build a model based on sample data, known as training
+          data,
+          in order to
+          make predictions or decisions without being explicitly programmed to do so.</p>
+      </div>
+
+      <div class="col-3 col-s-12 a">
+        <h2>heading 2</h2>
+        <p>Machine learning (ML) is the study of computer algorithms that can improve automatically through experience
+          and
+          by the use of data. ... Machine learning algorithms build a model based on sample data, known as training
+          data,
+          in order to
+          make predictions or decisions without being explicitly programmed to do so.</p>
+
+
+
+      </div>
+
+
+    </div>
+    <div class="col-9 col-s-6 a">
+      <h2>heading 2</h2>
+      <p>Machine learning (ML) is the study of computer algorithms that can improve automatically through experience and
+        by the use of data. ... Machine learning algorithms build a model based on sample data, known as training data,
+        in order to
+        make predictions or decisions without being explicitly programmed to do so.</p>
+    </div>
+    <div class="row">
+      <div class="col-3 col-s-3 ">
+        <div style="align-items: center;">
+          <button class="button">click here</button>
+        </div>
+      </div>
+      <div class="footer col-12 col-s-12">
+        <p>all right reserved @ 2016</p>
+      </div>
+    </div>
+
+</body>
+
+</html>
